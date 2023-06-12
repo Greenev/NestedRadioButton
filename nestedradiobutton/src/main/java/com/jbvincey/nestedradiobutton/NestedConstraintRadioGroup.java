@@ -20,6 +20,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Build;
+import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
@@ -250,5 +251,9 @@ public class NestedConstraintRadioGroup extends ConstraintLayout implements Nest
             }
         }
         return null;
+    }
+
+    public void check(@IdRes int id) {
+        nestedRadioGroupManager.check(id);
     }
 }
