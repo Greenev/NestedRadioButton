@@ -256,4 +256,12 @@ public class NestedConstraintRadioGroup extends ConstraintLayout implements Nest
     public void check(@IdRes int id) {
         nestedRadioGroupManager.check(id);
     }
+
+    public void clearCheck() {
+        nestedRadioGroupManager.clearCheck();
+    }
+
+    public @IdRes int checkedRadioButtonId() {
+        return nestedRadioGroupManager.getCheckedId();
+    }
 }
